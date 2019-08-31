@@ -1,0 +1,287 @@
+/*common css*/
+
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+input,
+button {
+    font-family: 'arial';
+    padding: 0;
+    margin: 0;
+    border: none;
+    outline: none;
+    -webkit-appearance: none;
+}
+
+input,
+textarea {
+    outline: none;
+    background: rgba(0, 0, 0, 0);
+}
+
+input::-webkit-outer-spin-button,
+
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+}
+
+input[type="number"] {
+    -moz-appearance: textfield;
+}
+
+img {
+    pointer-events: none;
+}
+
+a:link,
+a:visited {
+    color: #0168FF;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #0168FF;
+    text-decoration: none;
+}
+
+a:active {
+    color: #0168FF;
+}
+
+ul,
+li,
+ol,
+dl {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.pa {
+    position: absolute;
+}
+
+.pr {
+    position: relative;
+}
+
+.pf {
+    position: fixed;
+}
+
+.df {
+    display: flex;
+}
+
+.center {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+}
+
+.wCenter {
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+
+.sCenter {
+    display: block;
+    margin: 0 auto;
+}
+
+.show {
+    display: block;
+}
+
+.di {
+    display: inline;
+}
+
+.dil {
+    display: inline-block;
+}
+
+.hide {
+    display: none;
+}
+
+.ohide {
+    opacity: 0;
+    filter: alpha(opacity=0);
+}
+
+.clearfix {
+
+    &::before,
+    &::after {
+        content: "";
+        height: 0;
+        line-height: 0;
+        display: block;
+        visibility: hidden;
+        clear: both;
+    }
+}
+
+.center {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+
+.wCenter {
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+
+.mwCenter {
+    margin: 0 auto;
+}
+
+.hCenter {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+}
+
+.tCenter {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+}
+
+.tHorCenter {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+}
+
+.tVerCenter {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+}
+
+.al-center {
+    display: flex;
+    align-items: center;
+    /*垂直居中*/
+}
+
+.b-sizing {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.overeli {
+    overflow: hidden;
+    /*超出部分隐藏*/
+    text-overflow: ellipsis;
+    /* 超出部分显示省略号 */
+    white-space: nowrap;
+    /*规定段落中的文本不进行换行 */
+}
+
+.anyoverli {
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+.noSelect {
+    -webkit-touch-callout: none;
+    /*系统默认菜单被禁用*/
+    -webkit-user-select: none;
+    /*webkit浏览器*/
+    -khtml-user-select: none;
+    /*早期浏览器*/
+    -moz-user-select: none;
+    /*火狐*/
+    -ms-user-select: none;
+    /*IE10*/
+    user-select: none;
+}
+
+.hoverBorder {
+    position: relative;
+    border-bottom: 1px transparent solid;
+
+    &::after {
+        content: "";
+        position: absolute;
+        left: 0;
+        bottom: -1px;
+        height: 1px;
+        width: 0%;
+        border-bottom-width: 1px;
+        border-bottom-style: solid;
+        transform-origin: left;
+        transition: 0.2s width cubic-bezier(0.2, 0.0, 0.2, 1);
+    }
+
+    &:hover {
+        transition: all .5s cubic-bezier(0.2, 0.0, 0.2, 1);
+
+        &::after {
+            width: 100%;
+        }
+    }
+}
+
+.liBorder {
+    a {
+        position: relative;
+        border-bottom: 1px transparent solid;
+
+        &::after {
+            content: "";
+            position: absolute;
+            left: 0;
+            bottom: -1px;
+            height: 1px;
+            width: 0%;
+            border-bottom-width: 1px;
+            border-bottom-style: solid;
+            transform-origin: left;
+            transition: 0.1s width cubic-bezier(0.2, 0.0, 0.2, 1);
+        }
+    }
+
+    &:hover {
+        a {
+            &::after {
+                width: 100%;
+                transition: 0.5s width cubic-bezier(0.2, 0.0, 0.2, 1);
+            }
+        }
+    }
+}

@@ -1,0 +1,175 @@
+.signForm {
+    padding: 30px 0 0;
+    width: 350px;
+    font-size: 16px;
+    margin: 0 auto;
+
+    .inBox {
+        label {
+            height: 40px;
+            box-sizing: border-box;
+            border: 1px solid #dddddd;
+
+            span {
+                width: 40px;
+                height: 38px;
+                box-sizing: border-box;
+                border-right: 1px solid #dddddd;
+                line-height: 40px;
+                color: #CCCCCC;
+            }
+
+            input {
+                height: 38px;
+                padding: 10px;
+                box-sizing: border-box;
+                flex: 1;
+                font-size: 16px;
+                letter-spacing: 1px;
+                color: #444444;
+
+                &::-webkit-input-placeholder {
+                    color: #bbbbbb;
+                    font-weight: 400;
+                }
+            }
+
+            &.big {
+                width: 100%;
+            }
+
+            &.small {
+                width: 235px;
+
+                input {
+                    width: 193px;
+                }
+            }
+        }
+
+        .errmsg {
+            text-align: left;
+            height: 30px;
+            opacity: 0;
+            color: #ef0b0b;
+            font-size: 12px;
+            line-height: 30px;
+            padding-left: 30px;
+        }
+
+        &.err {
+
+            label,
+            span {
+                border-color: #ef0b0b;
+
+                &.codeBtn {
+                    border-color: #0168FF;
+                }
+            }
+
+            .errmsg {
+                opacity: 1;
+            }
+        }
+    }
+
+    .codeBox {
+        justify-content: space-between;
+
+        .jumpbtn {
+            width: 105px;
+            height: 40px;
+            line-height: 40px;
+            box-sizing: border-box;
+            border: 1px solid #0168ff;
+            color: #0168ff;
+            font-size: 16px;
+            background: #ffffff;
+            cursor: pointer;
+
+            &:hover {
+                color: #ffffff;
+                background: #0168FF;
+            }
+
+            &.active {
+                border-color: #dddddd;
+                color: #ffffff;
+                background: #e5e5e5;
+                cursor: not-allowed;
+            }
+
+            &.reject {
+                color: #ffffff;
+                background: #aaaaaa;
+                border-color: #aaaaaa;
+                cursor: not-allowed;
+            }
+        }
+    }
+
+    .jumpLog {
+        padding-bottom: 30px;
+        justify-content: space-between;
+
+        .jumpbtn {
+            cursor: pointer;
+            color: #0168FF;
+            font-size: 14px;
+
+            &.reject {
+                color: #ffffff;
+                background: #aaaaaa;
+                border-color: #aaaaaa;
+                cursor: not-allowed;
+            }
+        }
+
+        .selectBox {
+            white-space: nowrap;
+
+            .select {
+                display: inline-block;
+                top: 2px;
+                height: 14px;
+                width: 14px;
+                border: 1px solid #aaaaaa;
+                text-align: center;
+                font-size: 12px;
+                font-weight: 700;
+
+                &.active {
+                    top: 0;
+                    border-color: #0168FF;
+                    background: #0168FF;
+                    color: #ffffff;
+                }
+            }
+
+            .cutProto {
+                font-size: 14px;
+                color: #444444;
+                cursor: pointer;
+            }
+        }
+    }
+
+    .logBtn {
+        display: block;
+        width: 100%;
+        font-size: 16px;
+        height: 40px;
+        line-height: 40px;
+        background: #0168ff;
+        color: #ffffff;
+        cursor: pointer;
+
+        &.reject {
+            color: #ffffff;
+            background: #aaaaaa;
+            border-color: #aaaaaa;
+            cursor: not-allowed;
+        }
+    }
+}
