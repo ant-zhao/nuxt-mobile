@@ -22,7 +22,7 @@
     "@nuxtjs/axios": "^5.3.6",
     "@nuxtjs/pwa": "^2.6.0",
     "@nuxtjs/router": "^1.4.0",
-    "axios": "^0.19.0",
+    "axios": "^0.21.1",
     "element-ui": "^2.4.11",
     "express": "^4.16.4",
     "less": "^3.9.0",
