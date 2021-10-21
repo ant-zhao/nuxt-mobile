@@ -1,4 +1,4 @@
-# weread_pc
+# nuxt-mobile
 
 ## Build Setup
 
@@ -7,7 +7,7 @@
 $ npm install
 
 # serve with hot reload at localhost:3000
-$ npm run dev
+$ npm run serve
 
 # build for production and launch server
 $ npm run build
