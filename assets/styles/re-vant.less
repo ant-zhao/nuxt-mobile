@@ -1,0 +1,77 @@
+@import 'vant/lib/index.css';
+
+.van-button--primary,.van-button--info,.van-tabs__line {
+    background-color: var(--activeColor)!important;
+    border-color: var(--activeColor)!important;
+}
+
+.van-pagination__item {
+    background-color: var(--backgroundColor)!important;
+    &.van-pagination__item--active {
+        color: #ffffff!important;
+        background-color: var(--activeColor)!important;
+    }
+}
+
+.van-pagination__item--disabled, .van-pagination__item--disabled:active {
+    background: var(--disabledColor)!important;
+    color: var(--hintColor)!important;
+}
+
+.van-uploader__upload, .van-uploader__wrapper {
+    background-color: var(--uploaderBgColor)!important;
+}
+
+input,textarea {
+    &::-webkit-input-placeholder {
+        color: var(--placeholderColor)!important;
+    }
+}
+.van-field--error .van-field__control::placeholder {
+    color: var(--placeholderColor)!important;
+}
+.van-field--error .van-field__control, .van-cell,
+.van-cell__value--alone,.van-field__control,
+.van-picker-column__item, .van-tab {
+    color: var(--textColor)!important;
+}
+
+.van-tab--active {
+    color: var(--headColor)!important;
+}
+
+.van-picker__cancel {
+    color: var(--labelColor)!important;
+}
+
+.van-picker__confirm, .van-pagination__item {
+    color: var(--activeColor)!important;
+}
+
+.van-popup,.van-picker, .van-cell, .van-tabs__nav {
+    background-color: var(--backgroundColor)!important;
+}
+
+.van-picker__mask {
+    background-image: var(--maskBgColor)!important;
+}
+
+[class*='van-hairline']::after,.van-cell {
+    border-color: var(--borderColor)!important;
+}
+
+.van-cell::after {
+    opacity: 0;
+}
+
+.van-field {
+    border-bottom: 1px solid var(--borderColor);
+}
+
+.van-empty {
+    padding: 0!important;
+    .van-empty__image {
+        width: 120px;
+        height: 120px;
+    }
+}
